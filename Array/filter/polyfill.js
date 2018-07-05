@@ -4,7 +4,7 @@ Array.prototype.nativeFilter = function(callbackfn, thisArg) {
   }
 
   const res = []
-  for (let i in this) {
+  for (let i = 0; i < this.length; i++) {
     if (callbackfn.call(thisArg, this[i], i, this)) res.push(this[i])
   }
 
