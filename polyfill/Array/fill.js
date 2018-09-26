@@ -1,5 +1,7 @@
 Object.defineProperty(Array.prototype, '_fill', {
   value: function(value, start, end) {
+    'use strict'
+
     if (this == null) {
       throw new TypeError('this is null or not defined')
     }
@@ -8,7 +10,7 @@ Object.defineProperty(Array.prototype, '_fill', {
     const len = O.length >>> 0
 
     const relativeStart = start >> 0
-    const left =
+    let left =
       relativeStart < 0
         ? Math.max(len + relativeStart, 0)
         : Math.min(relativeStart, len)
