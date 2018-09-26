@@ -7,12 +7,16 @@
 // }
 
 // Array._isArray = function(arg) {
-//   return arg.constructor === Array
+//   return !!arg && arg.constructor === Array
 // }
 
 Array._isArray = function(arg) {
-  return arg.__proto__ === Array.prototype
+  return !!arg && arg.__proto__ === Array.prototype
 }
 
 console.log(Array._isArray([]))
 console.log(Array._isArray({}))
+console.log(Array._isArray(null))
+console.log(Array._isArray(4))
+console.log(Array._isArray(NaN))
+console.log(Array._isArray(Array))
