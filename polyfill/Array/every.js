@@ -1,9 +1,13 @@
-Array.prototype.nativeEvery = function(callbackfn, thisArg) {
+Array.prototype._every = function(callbackfn, thisArg) {
+  'use strict'
+
+  if (typeof this == null) {
+    throw new TypeError('this is null or not defined')
+  }
   if (typeof callbackfn !== 'function') {
     throw new TypeError('callbackfn is not a function')
   }
 
-  // HELP: Why need `Object(this)`
   const O = Object(this)
   const len = O.length >>> 0
 
@@ -18,5 +22,5 @@ Array.prototype.nativeEvery = function(callbackfn, thisArg) {
   return true
 }
 
-console.log([1, 3, 4].nativeEvery(x => x > 2))
-console.log([1, 3, 4].nativeEvery(x => x > 0))
+console.log([1, 3, 4]._every(x => x > 2))
+console.log([1, 3, 4, , 5]._every(x => x > 0))
