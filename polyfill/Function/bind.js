@@ -1,6 +1,6 @@
 // HELP:
 
-Function.prototype.bind = function(oThis) {
+Function.prototype._bind = function(oThis) {
   if (typeof this !== 'function') {
     // closest thing possible to the ECMAScript 5
     // internal IsCallable function
@@ -27,3 +27,18 @@ Function.prototype.bind = function(oThis) {
 
   return fBound
 }
+
+var module = {
+  x: 42,
+  getX: function() {
+    return this.x
+  },
+}
+
+const unboundGetX = module.getX
+console.log(unboundGetX()) // The function gets invoked at the global scope
+// expected output: undefined
+
+const boundGetX = unboundGetX._bind(module)
+console.log(boundGetX())
+// expected output: 42

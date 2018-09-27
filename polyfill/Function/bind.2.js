@@ -1,6 +1,6 @@
 // HELP:
 
-Function.prototype.myBind = function(context) {
+Function.prototype._bind = function(context) {
   if (typeof this !== 'function') {
     throw new TypeError('Error')
   }
