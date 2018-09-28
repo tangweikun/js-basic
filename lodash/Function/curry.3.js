@@ -1,0 +1,20 @@
+function curry(fn) {
+  function nest(N, args) {
+    return (...xs) => {
+      if (N - xs.length <= 0) {
+        return fn(...args, ...xs)
+      }
+      return nest(N - xs.length, [...args, ...xs])
+    }
+  }
+  return nest(fn.length, [])
+}
+
+var f = function(a, b, c) {
+  console.log([a, b, c])
+}
+
+var curried = curry(f)
+curried(1)(2)(3) // => [1, 2, 3]
+curried(1, 2)(3) // => [1, 2, 3]
+curried(1, 2, 3) // => [1, 2, 3]
