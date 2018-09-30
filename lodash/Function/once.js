@@ -1,3 +1,5 @@
+// Ensures a function is called only once.
+
 const once = fn => {
   let isCalled = false
 
