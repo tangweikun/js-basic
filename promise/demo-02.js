@@ -20,8 +20,8 @@ Promise.all([p1, p2, p3]).then(
   },
 )
 
-// reject
-Promise.all([p1, p2, p3])
+// resolve
+Promise.all([p1, p2])
   .then(values => {
     console.log(values)
   })
