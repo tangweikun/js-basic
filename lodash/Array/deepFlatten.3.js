@@ -1,3 +1,5 @@
+// 2018-11-29
+
 const deepFlatten = arr => {
   let res = []
   for (let v of iteratorTree(arr)) res.push(v)

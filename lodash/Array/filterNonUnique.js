@@ -1,3 +1,5 @@
+// 2018-11-29
+
 // Filters out the non-unique values in an array.
 
 const filterNonUnique = arr =>

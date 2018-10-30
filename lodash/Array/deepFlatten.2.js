@@ -1,7 +1,6 @@
+// 2018-11-29
+
 const deepFlatten = arr =>
-  arr.reduce(
-    (acc, x) => (
-      Array.isArray(x) ? (acc = acc.concat(deepFlatten(x))) : acc.push(x), acc
-    ),
-    [],
-  )
+  arr.reduce((acc, x) => acc.concat(Array.isArray(x) ? deepFlatten(x) : x), [])
+
+console.log(deepFlatten([[1, 2], 3, [4, [5]]]))
