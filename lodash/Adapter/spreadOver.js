@@ -1,5 +1,7 @@
-// HELP:
-// Takes a variadic function and returns a closure that accepts an array of arguments to map to the inputs of the function.
+// 2018-11-29
+
+// Takes a variadic function and returns a closure that
+// accepts an array of arguments to map to the inputs of the function.
 
 const spreadOver = fn => argsArr => fn(...argsArr)
 // const spreadOver = fn => argsArr => fn.apply(null, argsArr)

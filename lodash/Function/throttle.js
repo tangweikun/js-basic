@@ -1,5 +1,3 @@
-// HELP:
-
 const throttle = (fn, wait) => {
   let inThrottle, lastFn, lastTime
   return function() {

@@ -1,4 +1,4 @@
-// HELP:
+// 2018-11-29
 
 // Flip takes a function as an argument, then makes the first argument the last.
 
