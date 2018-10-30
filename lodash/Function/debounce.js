@@ -1,8 +1,10 @@
+// 2018-11-29
+
 function debounce(fn, delay) {
   let timeoutId
   return function() {
     clearTimeout(timeoutId)
-    timeoutId = setTimeout(() => fn.apply(this, arguments), delay)
+    timeoutId = setTimeout(fn.bind(this, ...arguments), delay)
   }
 }
 

@@ -1,3 +1,5 @@
+// 2018-11-29
+
 const debounce = (fn, ms = 0) => {
   let timeoutId
   return function(...args) {

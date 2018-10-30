@@ -1,3 +1,5 @@
+// 2018-11-29
+
 const sleep = (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms))
 
 sleep(3000).then(() => console.log('Bye'))

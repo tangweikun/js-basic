@@ -1,12 +1,10 @@
+// 2018-11-29
+
 function curry(fn) {
-  return (...xs) => {
-    if (xs.length === 0) {
-      throw Error('EMPTY INVOCATION')
-    }
-    if (xs.length >= fn.length) {
-      return fn(...xs)
-    }
-    return curry(fn.bind(null, ...xs))
+  return function() {
+    return fn.length <= arguments.length
+      ? fn(...arguments)
+      : curry(fn.bind(null, ...arguments))
   }
 }
 

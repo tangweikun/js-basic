@@ -1,3 +1,5 @@
+// 2018-11-29
+
 // Ensures a function is called only once.
 
 const once = fn => {

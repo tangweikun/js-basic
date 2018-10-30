@@ -1,3 +1,5 @@
+// 2018-11-29
+
 const throttle = (fn, wait) => {
   let inThrottle, lastFn, lastTime
   return function() {

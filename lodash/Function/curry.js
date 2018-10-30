@@ -1,4 +1,4 @@
-// HELP:
+// 2018-11-29
 
 const curry = func => {
   const len = func.length
