@@ -1,3 +1,5 @@
+// 2018-11-31
+
 // Array._isArray = function(arg) {
 //   return Object.prototype.toString.call(arg) === '[object Array]'
 // }

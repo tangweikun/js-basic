@@ -1,3 +1,5 @@
+// 2018-11-29
+
 // The JSON.parse(JSON.stringify()) combination to deep copy Javascript objects is an ineffective hack,
 // because JSON does not support values of undefined and function () {},
 // and therefore JSON.stringify will ignore those sections of code,

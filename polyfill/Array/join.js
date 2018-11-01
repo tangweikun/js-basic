@@ -1,3 +1,5 @@
+// 2018-11-31
+
 Array.prototype._join = function(separator = ',') {
   if (this == null) {
     throw new TypeError('this is null or not defined')

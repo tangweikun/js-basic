@@ -1,3 +1,5 @@
+// 2018-11-31
+
 Array.prototype._reduce = function(callbackfn) {
   'use strict'
 

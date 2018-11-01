@@ -1,3 +1,5 @@
+// 2018-11-29
+
 Array.prototype._find = function(callbackfn, thisArg) {
   'use strict'
 

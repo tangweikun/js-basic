@@ -1,3 +1,5 @@
+// 2018-11-31
+
 Array.prototype._map = function(callbackfn, thisArg) {
   return this.reduce(
     (acc, currentValue, idx, array) => (

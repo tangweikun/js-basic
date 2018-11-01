@@ -1,3 +1,5 @@
+// 2018-11-31
+
 Array.prototype._lastIndexOf = function(target) {
   'use strict'
 

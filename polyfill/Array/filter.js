@@ -1,3 +1,5 @@
+// 2018-11-29
+
 Array.prototype._filter = function(callbackfn, thisArg) {
   'use strict'
 
@@ -26,4 +28,4 @@ Array.prototype._filter = function(callbackfn, thisArg) {
 }
 
 console.log([1, 2, 3, 4]._filter(x => x > 2))
-console.log([1, 2, 3, 4]._filter(x => false))
+console.log([1, 2, 3, 4]._filter(_ => false))

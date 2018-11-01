@@ -1,3 +1,5 @@
+// 2018-11-29
+
 const flattenObject = (obj, prefix = '') => {
   const res = {}
   for (const key in obj) {
