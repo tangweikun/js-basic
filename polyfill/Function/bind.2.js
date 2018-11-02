@@ -6,7 +6,7 @@ Function.prototype._bind = function(context) {
   }
   var _this = this
   var args = [...arguments].slice(1)
-  // return a function
+
   return function F() {
     // we can use `new F()` because it returns a function, so we need to determine
     if (this instanceof F) {

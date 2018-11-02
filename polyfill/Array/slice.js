@@ -1,3 +1,5 @@
+// 2018-12-01
+
 Array.prototype._slice = function() {
   'use strict'
 
