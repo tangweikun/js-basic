@@ -1,4 +1,4 @@
-// 2018-11-29
+// 2018-10-29
 
 // Creates a function that invokes each provided function with the arguments it receives and returns the results.
 

@@ -1,4 +1,4 @@
-// 2018-11-29
+// 2018-10-29
 
 const deepFlatten = arr =>
   arr.reduce((acc, x) => acc.concat(Array.isArray(x) ? deepFlatten(x) : x), [])

@@ -1,4 +1,4 @@
-// 2018-11-29
+// 2018-10-29
 
 // Creates a function that accepts up to n arguments, ignoring any additional arguments.
 

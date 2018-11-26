@@ -1,3 +1,5 @@
+// 2018-12-09
+
 function deepFreeze(obj) {
   const propNames = Object.getOwnPropertyNames(obj)
 

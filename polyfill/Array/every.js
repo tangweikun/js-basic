@@ -1,4 +1,4 @@
-// 2018-11-29
+// 2018-10-29
 
 Array.prototype._every = function(callbackfn, thisArg) {
   'use strict'

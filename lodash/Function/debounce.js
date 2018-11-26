@@ -1,4 +1,5 @@
-// 2018-11-29
+// 2018-10-29
+// 2018-11-26
 
 function debounce(fn, delay) {
   let timeoutId

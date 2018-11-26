@@ -1,4 +1,4 @@
-// 2018-11-29
+// 2018-10-29
 
 function sum() {
   const args = Array.prototype.slice.call(arguments)

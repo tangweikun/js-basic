@@ -1,17 +1,20 @@
-// 2018-11-29
+// 2018-10-29
+// 2018-11-26
 
 const throttle = (fn, wait) => {
-  let inThrottle, lastFn, lastTime
+  let inThrottle, timeId, lastTime
+
   return function() {
-    const context = this,
-      args = arguments
+    const context = this
+    const args = [...arguments]
+
     if (!inThrottle) {
       fn.apply(context, args)
       lastTime = Date.now()
       inThrottle = true
     } else {
-      clearTimeout(lastFn)
-      lastFn = setTimeout(function() {
+      clearTimeout(timeId)
+      timeId = setTimeout(function() {
         if (Date.now() - lastTime >= wait) {
           fn.apply(context, args)
           lastTime = Date.now()
